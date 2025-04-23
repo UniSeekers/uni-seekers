@@ -1,140 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>UniSeekers - Home</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f9;
-      text-align: center;
-    }
-
-    h1 {
-      color: #2c3e50;
-    }
-
-    .contact-box {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 500px;
-      margin: 30px auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: left;
-    }
-
-    .contact-box h2 {
-      text-align: center;
-      color: #34495e;
-    }
-
-    .contact-box p {
-      font-size: 16px;
-      margin: 8px 0;
-    }
-
-    .apply-btn {
-      background-color: #27ae60;
-      color: white;
-      border: none;
-      padding: 14px 28px;
-      font-size: 18px;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-
-    .apply-btn:hover {
-      background-color: #219150;
-    }
-
-    #apply-form {
-      display: none;
-      padding: 40px 20px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      margin-top: 40px;
-      max-width: 600px;
-      margin: 0 auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .form-input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .form-input[type="file"] {
-      padding: 5px;
-    }
-
-    .form-btn {
-      background-color: #3498db;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 18px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .form-btn:hover {
-      background-color: #2980b9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSeekers - Apply Now</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #logo {
+            width: 150px;
+        }
+        .details {
+            text-align: center;
+            margin: 20px;
+        }
+        .details h2 {
+            font-size: 24px;
+        }
+        .apply-now-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .apply-now-btn:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Logo and Homepage Section -->
-  <div>
-    <img src="logo.png" alt="UniSeekers Logo" style="max-width: 200px; margin-top: 20px;" />
-    <h1>Welcome to UniSeekers</h1>
-    <p>Helping students apply to universities and colleges with ease</p>
-    <div class="contact-box">
-      <h2>Contact & Payment Info</h2>
-      <p><strong>Account Holder:</strong> DENGA EMMANUEL SIPHUGU</p>
-      <p><strong>Bank Name:</strong> ABSA</p>
-      <p><strong>Account Number:</strong> 4102721358</p>
-      <p><strong>Branch Code:</strong> 632005</p>
-      <p><strong>Account Type:</strong> Current Account</p>
-      <p><strong>Cellphone:</strong> 062 017 6574</p>
-      <p><strong>Email:</strong> emmanuelsiphugu19@gmail.com</p>
+    <header>
+        <img id="logo" src="your-logo.png" alt="UniSeekers Logo"> <!-- Replace 'your-logo.png' with your actual logo file -->
+        <h1>Welcome to UniSeekers</h1>
+    </header>
+
+    <div class="details">
+        <h2>Contact Details</h2>
+        <p><strong>Email:</strong> emmanuelsiphugu19@gmail.com</p>
+        <p><strong>Phone:</strong> 0620176574</p>
+        <p><strong>Bank Account:</strong> ABSA: 4102721358 (Branch Code: 632005, Current Account)</p>
     </div>
 
-    <button class="apply-btn" onclick="showForm()">Apply Now</button>
-  </div>
-
-  <!-- Application Form Section -->
-  <div id="apply-form">
-    <h2>Application Form</h2>
-    <form>
-      <input type="text" class="form-input" name="first_name" placeholder="First Name" required />
-      <input type="text" class="form-input" name="last_name" placeholder="Last Name" required />
-      <input type="text" class="form-input" name="id_number" placeholder="ID Number" required />
-      <input type="text" class="form-input" name="address" placeholder="Physical Address" required />
-      <input type="text" class="form-input" name="next_of_kin" placeholder="Next of Kin" required />
-      <input type="tel" class="form-input" name="cell_number" placeholder="Cellphone Number" required />
-      <input type="file" class="form-input" name="id_copy" required />
-      <input type="file" class="form-input" name="proof_address" required />
-      <input type="file" class="form-input" name="matric_results" required />
-      <input type="file" class="form-input" name="proof_payment" required />
-      <button type="submit" class="form-btn">Submit Application</button>
-    </form>
-  </div>
-
-  <script>
-    function showForm() {
-      document.getElementById("apply-form").style.display = "block";
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    }
-  </script>
+    <div class="apply-now">
+        <a href="https://docs.google.com/forms/d/1pQaFL9moixBWMdmgD8kVFSJYDGs7HeeJEgwsz6fFHZg/viewform" class="apply-now-btn" target="_blank">Apply Now</a>
+    </div>
 
 </body>
 </html>
